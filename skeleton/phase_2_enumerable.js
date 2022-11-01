@@ -28,6 +28,10 @@ Array.prototype.myReduce = function (callback, acc) {
         acc = callback(acc, el)
     })
 
+    // for (let i = 0; i<this.length; i++) {
+    //     acc = callback(acc, this[i])
+    // }
+    
     return acc;
 }
 
