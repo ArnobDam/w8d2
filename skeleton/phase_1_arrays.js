@@ -29,4 +29,19 @@ console.log(array.twoSum());
 
 Array.prototype.transpose = function () {
     let transposed = []
+    for (let i = 0; i < this[0].length; i++) {
+        let subArray = []
+        for (let j = 0; j < this.length; j++) {
+            subArray.push(this[j][i]);
+        }
+        transposed.push(subArray); 
+    }
+    return transposed
 }
+
+array = [
+    [1,2], 
+    [3,4], 
+    [5,6]
+]
+console.log(array.transpose())
